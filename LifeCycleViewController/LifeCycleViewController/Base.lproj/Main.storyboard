@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LifeCycleViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zre-fu-9Gr">
+                                <rect key="frame" x="89" y="328.5" width="197" height="30"/>
+                                <state key="normal" title="Go to second ViewController"/>
+                                <connections>
+                                    <segue destination="lhD-T0-n4x" kind="show" id="KlP-mT-XHL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.24249061166260444" blue="0.66402876932840371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zre-fu-9Gr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="22Z-aS-s4r"/>
+                            <constraint firstItem="Zre-fu-9Gr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="4um-H9-c9H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="C82-x3-ugE">
+            <objects>
+                <viewController id="lhD-T0-n4x" customClass="SecondViewController" customModule="LifeCycleViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wtX-f1-ar3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFY-VJ-bLJ">
+                                <rect key="frame" x="101" y="328.5" width="173" height="30"/>
+                                <state key="normal" title="Go to first ViewController"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="O7n-XS-aPx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30410487645402029" green="0.36069846277595086" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="FFY-VJ-bLJ" firstAttribute="centerX" secondItem="5x4-Zz-8Yc" secondAttribute="centerX" id="poO-5Y-2GG"/>
+                            <constraint firstItem="FFY-VJ-bLJ" firstAttribute="centerY" secondItem="5x4-Zz-8Yc" secondAttribute="centerY" id="zNr-l1-Vt2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5x4-Zz-8Yc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mt3-Y3-qxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.60000000000002" y="-641.82908545727139"/>
+        </scene>
+    </scenes>
+</document>
