@@ -16,7 +16,6 @@ class SecondViewController: UIViewController {
     }
     
     override func loadView() {
-        super.loadView()
         print("LoadView создет view")
     }
     //MARK - обработка изменений view и создание view
